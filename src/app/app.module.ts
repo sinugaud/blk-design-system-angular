@@ -23,9 +23,19 @@ import { IndexComponent } from "./pages/index/index.component";
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { ArticalComponent } from './artical/artical.component';
+import { HeaderComponent } from './header/header.component';
+import { PrimesliderComponent } from './primeslider/primeslider.component';
+import { SingleArticleComponent } from "./single-article/single-article.component";
+import { ArtComponent } from './art/art.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArticalComponent,
+    SingleArticleComponent,
+    HeaderComponent,
+    PrimesliderComponent,
+    ArtComponent,
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,

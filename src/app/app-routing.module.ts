@@ -7,13 +7,13 @@ import { IndexComponent } from "./pages/index/index.component";
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { SingleArticleComponent } from "./single-article/single-article.component";
+import { ArtComponent } from "./art/art.component";
+import { ArticalComponent } from "./artical/artical.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: IndexComponent },
-  { path: "profile", component: ProfilepageComponent },
-  { path: "register", component: RegisterpageComponent },
-  { path: "landing", component: LandingpageComponent }
+   { path: "", component: ArticalComponent },
+  {path: "article/:id", component: SingleArticleComponent},
 ];
 
 @NgModule({
@@ -24,6 +24,8 @@ const routes: Routes = [
       useHash: true
     })
   ],
-  exports: []
+  exports: [
+    
+  ]
 })
 export class AppRoutingModule {}
